@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Halihali 安卓安装包档案：哈哩哈哩 v1.0.0 信息核对与安装排障</title>
+<meta name="description" content="整理哈哩哈哩（Halihali）安卓端 v1.0.0 安装包的版本、包名、体积与 MD5 校验值，配一套安卓安装步骤，以及「解析包出现问题」「应用未安装」等常见报错的逐项排查清单。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23ff5c8a'/%3E%3Cstop offset='1' stop-color='%238b5cf6'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='url(%23g)'/%3E%3Cpath d='M25 20l20 12-20 12z' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-head">
+  <div class="wrap head-in">
+    <a class="brand" href="/">
+      <span class="brand-dot"><svg viewBox="0 0 24 24"><path d="M8 5l12 7-12 7z"/></svg></span>
+      Halihali 追番手册
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="展开菜单"><span></span></button>
+    <nav class="nav-menu" id="navMenu">
+      <a href="/#features">播放功能</a>
+      <a href="/#settings">设置速查</a>
+      <a href="/#perks">权益一览</a>
+      <a href="/#devices">设备支持</a>
+      <a href="/#faq">常见问题</a>
+      <a class="nav-cta" data-link="download" href="#get">获取安装文件资源</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<div class="wrap page-head">
+  <h1>安装包<span class="grad-text">档案</span>与安装排障</h1>
+  <p>这一页只干两件事：把手上这份安装包的「身份信息」摆清楚，再把安卓安装每一步和常见报错的处理讲明白。装之前先对一眼信息，别和其它渠道的同名包搞混。</p>
+</div>
+
+<!-- 包信息 -->
+<section style="padding-top: 8px;">
+  <div class="wrap">
+    <h2 class="sec-title">这份安装包是什么</h2>
+    <p class="sec-sub">不同渠道标注的版本号与体积常常各不相同，下表是本手册所述这一份的核对信息（核对日期 2026-09-24）。</p>
+    <div class="tbl-card tbl-wrap">
+      <table>
+        <tbody>
+          <tr><th style="width: 180px;">应用</th><td><strong>哈哩哈哩 Halihali（安卓端）</strong></td></tr>
+          <tr><th>版本号</th><td>1.0.0</td></tr>
+          <tr><th>包名</th><td><code class="k">myapp.halihali</code></td></tr>
+          <tr><th>安装包大小</th><td>3.34M</td></tr>
+          <tr><th>MD5</th><td><code class="k">6F2FDEF393321157F4220D22220355A7</code></td></tr>
+          <tr><th>系统要求</th><td>安卓系统 5.2 及以上</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="notice" style="margin-top: 18px;"><strong>提示：</strong>如果手机里已装过另一个渠道的同名应用（包名或签名不同），直接覆盖安装会提示「应用未安装」，先卸载旧的再装这份；平台方后续发布的新版本，以应用内或其发布页当时显示为准。</p>
+  </div>
+</section>
+
+<!-- 获取 -->
+<section id="get" style="background: var(--bg-soft);">
+  <div class="wrap">
+    <h2 class="sec-title">三步拿到安装包</h2>
+    <p class="sec-sub">安装包经夸克网盘分享获取，全程在手机上就能完成。</p>
+    <div class="tbl-card">
+      <div class="step"><span class="md-num">1</span><p><strong>打开分享链接：</strong>点下方按钮进入夸克网盘分享页（建议用手机浏览器或夸克 App 打开）。</p></div>
+      <div class="step"><span class="md-num">2</span><p><strong>转存或下载：</strong>把分享里的 APK 文件转存到自己的网盘或直接下载到手机，文件名形如 <code class="k">halihali_v1.0.0.apk</code>。</p></div>
+      <div class="step"><span class="md-num">3</span><p><strong>找到文件：</strong>在手机「文件管理 → 下载」里找到它，点开即进入安装流程。</p></div>
+    </div>
+    <div class="mid-cta">
+      <h2>哈哩哈哩 v1.0.0 安卓安装包</h2>
+      <p>夸克网盘分享 · 转存后即可下载安装</p>
+      <button class="btn btn-main" data-link="download">获取安装文件资源 ↓</button>
+    </div>
+  </div>
+</section>
+
+<!-- 安装步骤 -->
+<section>
+  <div class="wrap">
+    <h2 class="sec-title">安卓安装步骤</h2>
+    <p class="sec-sub">应用商店之外的安装包都会遇到「未知来源」提示，属于正常流程，按下面走即可。</p>
+    <div class="tbl-card">
+      <div class="step"><span class="md-num">1</span><p><strong>点开 APK：</strong>用浏览器或文件管理器打开下载好的 <code class="k">.apk</code> 文件。</p></div>
+      <div class="step"><span class="md-num">2</span><p><strong>允许安装来源：</strong>系统弹「禁止安装来自此来源的应用」时，点提示里的「设置」，给当前来源（浏览器或文件管理器）打开「允许安装」开关，返回继续。</p></div>
+      <div class="step"><span class="md-num">3</span><p><strong>等待完成：</strong>进度走完、桌面出现图标即成功。建议装在机身存储，别移到外置存储卡——卡速不稳容易导致打开异常。</p></div>
+      <div class="step"><span class="md-num">4</span><p><strong>首次启动授权：</strong>按需授予存储、网络等权限；拿不准的先拒绝，用到时应用会再申请。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 排查表 -->
+<section style="background: var(--bg-soft);">
+  <div class="wrap">
+    <h2 class="sec-title">装不上？对表排查</h2>
+    <p class="sec-sub">六种常见现象对应的原因与处理，一般前三行就能解决大部分问题。</p>
+    <div class="tbl-card tbl-wrap">
+      <table>
+        <thead><tr><th>现象</th><th>常见原因</th><th>怎么处理</th></tr></thead>
+        <tbody>
+          <tr><td><strong>解析包时出现问题</strong></td><td>文件下载不完整或损坏</td><td>重新下载，下完核对大小与 MD5</td></tr>
+          <tr><td><strong>应用未安装</strong></td><td>已有同名应用、签名不同</td><td>卸载旧的再装这份（本地数据会清，账号云端数据不受影响）</td></tr>
+          <tr><td><strong>点了没反应</strong></td><td>未给来源「安装未知应用」权限</td><td>按安装步骤第 2 步打开开关</td></tr>
+          <tr><td><strong>提示有风险 / 病毒</strong></td><td>安全软件对新应用误判</td><td>核对 MD5 无误后可继续安装</td></tr>
+          <tr><td><strong>装完立刻闪退</strong></td><td>系统版本过低或机型不兼容</td><td>确认安卓 5.2 以上；不满足只能换设备</td></tr>
+          <tr><td><strong>提示降级安装失败</strong></td><td>手机上已是更高版本</td><td>卸载高版本再装（先确认账号能登录）</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="notice" style="margin-top: 18px;"><strong>装好之后：</strong>首页找不到想看的番、倍速与小窗不会调、播放转圈卡顿——这些使用侧的问题都整理在<a href="/">首页的使用手册里</a>，可以先翻「播放页设置速查表」。</p>
+  </div>
+</section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap foot-in">
+    <p>Halihali 追番手册 · 一个第三方介绍与使用说明页，内容整理自公开资料，版权归原作者所有</p>
+    <p>页面所述功能与权益以应用内实际显示为准</p>
+  </div>
+</footer>
+
+<div class="float-btns">
+  <button class="fbtn" id="backTop" aria-label="返回顶部">↑</button>
+  <button class="fbtn fbtn-dl" data-link="download" aria-label="获取安装文件资源"><svg viewBox="0 0 24 24"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg></button>
+</div>
+
+<script src="assets/js/links.js"></script>
+<script src="assets/js/site.js"></script>
+</body>
+</html>
